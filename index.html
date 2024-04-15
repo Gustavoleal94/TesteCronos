@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <link rel="stylesheet" href="styles.css" />
+
+
+<body>
+    <header>
+        <div>
+
+        </div>
+    </header>
+
+    <div class="conteudo">
+        <div class="nome-topo">
+            <h2>Olá Luís Arcanjo,</h2>
+            <div class="barra-pesquisa">
+                <div class="icone-pesquisa-left">
+                    <img src="img/iconSrc.png" alt="Ícone de Pesquisa à Esquerda">
+                </div>
+                <input type="text" class="input-pesquisa" placeholder="Pesquisar" oninput="filtrarGrupos(this.value)" />
+            </div>
+            <div class="icone-pesquisa-right-container">
+                <img src="img/IconFoto.png" class="icone-pesquisa-right" alt="Ícone de Pesquisa à Direita">
+            </div>
+        </div>
+        <div class="geracao-boletos">
+            <h2 class="link-geracao-boletos">Geração de Boletos</h2>
+        </div>
+        <div class="card">
+            <img src="img/Cartão.png" alt="Sua Foto" class="foto">
+            <div class="cardfilhos backgroud-card">
+                <div class="icone-container">
+                    <div class="icone-background"></div>
+                    <img src="img/iconUser.png" alt="Ícone_user" class="iconUser">
+                    <div class="conteudoCard">Grupos</div>
+                </div>
+            </div>
+            <div class="cardfilhos">
+                <img src="img/iconPageUp.png" alt="Ícone 1" class="posicao-icone">
+                <div class="colorFilho">Importações</div>
+            </div>
+            <div class="cardfilhos">
+                <img src="img/iconPage.png" alt="Ícone 2" class="posicao-icone">
+                <div class="colorFilho">Gerar Boleto</div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="btn-terciario" onclick="toggleGrupos()">Mostrar Grupos</button>
+        </div>
+        <div class="colorText">Grupos</div>
+        <div class="groups-container">
+            <div class="descricao-groups">
+                <div></div>
+                <div class="colorGroups namegroup">Grupo</div>
+                <div class="colorGroups">Participantes</div>
+                <div class="colorGroups">Valor do boleto</div>
+                <div></div>
+            </div>
+            <div class="groups">
+                <div>
+                    <img src="img/iconUser.png" alt="imageUser" class="icon-user">
+                </div>
+                <div class="textGroups">Grupo 1
+                    <div class="textGroups2">Criado em 12/03/2023</div>
+                </div>
+                <div class="participantesClass">10 Participantes</div>
+                <div class="valor">150,00 R$</div>
+                <div class="iconsGroup">
+                    <img src="img/iconOlho.png" alt="">
+                    <img src="img/iconLapis.png" alt="">
+                    <img src="img/iconX.png" alt="">
+                </div>
+            </div>
+            <div class="groups">
+                <div>
+                    <img src="img/iconUser.png" alt="imageUser" class="icon-user">
+                </div>
+                <div class="textGroups">Grupo 2
+                    <div class="textGroups2">Criado em 12/03/2023</div>
+                </div>
+                <div class="participantesClass">20 Participantes</div>
+                <div class="valor">250,00 R$</div>
+                <div class="iconsGroup">
+                    <img src="img/iconOlho.png" alt="">
+                    <img src="img/iconLapis.png" alt="">
+                    <img src="img/iconX.png" alt="">
+                </div>
+            </div>
+            <div class="groups">
+                <div>
+                    <img src="img/iconUser.png" alt="imageUser" class="icon-user">
+                </div>
+                <div class="textGroups">Grupo 3
+                    <div class="textGroups2">Criado em 12/03/2023</div>
+                </div>
+                <div class="participantesClass">30 Participantes</div>
+                <div class="valor">350,00 R$</div>
+                <div class="iconsGroup">
+                    <img src="img/iconOlho.png" alt="">
+                    <img src="img/iconLapis.png" alt="">
+                    <img src="img/iconX.png" alt="">
+                </div>
+            </div>
+            <div class="groups">
+                <div>
+                    <img src="img/iconUser.png" alt="imageUser" class="icon-user">
+                </div>
+                <div class="textGroups">Grupo 4
+                    <div class="textGroups2">Criado em 12/03/2023</div>
+                </div>
+                <div class="participantesClass">25 Participantes</div>
+                <div class="valor">200,00 R$</div>
+                <div class="iconsGroup">
+                    <img src="img/iconOlho.png" alt="">
+                    <img src="img/iconLapis.png" alt="">
+                    <img src="img/iconX.png" alt="">
+                </div>
+            </div>
+            <div class="groups">
+                <div>
+                    <img src="img/iconUser.png" alt="imageUser" class="icon-user">
+                </div>
+                <div class="textGroups">Grupo 5
+                    <div class="textGroups2">Criado em 12/03/2023</div>
+                </div>
+                <div class="participantesClass">15 Participantes</div>
+                <div class="valor">180,00 R$</div>
+                <div class="iconsGroup">
+                    <img src="img/iconOlho.png" alt="">
+                    <img src="img/iconLapis.png" alt="">
+                    <img src="img/iconX.png" alt="">
+                </div>
+            </div>
+            <div class="groups">
+                <div>
+                    <img src="img/iconUser.png" alt="imageUser" class="icon-user">
+                </div>
+                <div class="textGroups">Grupo 6
+                    <div class="textGroups2">Criado em 12/03/2023</div>
+                </div>
+                <div class="participantesClass">18 Participantes</div>
+                <div class="valor">40,00 R$</div>
+                <div class="iconsGroup">
+                    <img src="img/iconOlho.png" alt="">
+                    <img src="img/iconLapis.png" alt="">
+                    <img src="img/iconX.png" alt="">
+                </div>
+            </div>
+            <div class="groups">
+                <div>
+                    <img src="img/iconUser.png" alt="imageUser" class="icon-user">
+                </div>
+                <div class="textGroups">Grupo 7
+                    <div class="textGroups2">Criado em 12/03/2023</div>
+                </div>
+                <div class="participantesClass">22 Participantes</div>
+                <div class="valor">240,00 R$</div>
+                <div class="iconsGroup">
+                    <img src="img/iconOlho.png" alt="">
+                    <img src="img/iconLapis.png" alt="">
+                    <img src="img/iconX.png" alt="">
+                </div>
+            </div>
+            <div class="groups">
+                <div>
+                    <img src="img/iconUser.png" alt="imageUser" class="icon-user">
+                </div>
+                <div class="textGroups">Grupo 8
+                    <div class="textGroups2">Criado em 12/03/2023</div>
+                </div>
+                <div class="participantesClass">40 Participantes</div>
+                <div class="valor">200,00 R$</div>
+                <div class="iconsGroup">
+                    <img src="img/iconOlho.png" alt="">
+                    <img src="img/iconLapis.png" alt="">
+                    <img src="img/iconX.png" alt="">
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </div>
+</body>
+
+</html>
